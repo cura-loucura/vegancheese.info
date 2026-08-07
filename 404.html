@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — The Science and Practice of Vegan Cheese</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/assets/img/cashewbert.png" type="image/png">
+<link rel="stylesheet" href="/assets/style.css">
+<script>
+/* GitHub Pages cannot serve real 3xx redirects, so the old GoDaddy URLs are
+   forwarded here instead. Runs before render to avoid a visible flash. */
+(function () {
+  var old = {
+    "/impressum-/-kontakt": "/impressum.html",
+    "/impressum-%2f-kontakt": "/impressum.html",
+    "/impressum": "/impressum.html",
+    "/kontakt": "/impressum.html",
+    "/datenschutzerklärung": "/datenschutz.html",
+    "/datenschutzerklaerung": "/datenschutz.html",
+    "/datenschutz": "/datenschutz.html"
+  };
+  var raw = location.pathname.replace(/\/+$/, "").toLowerCase();
+  var dec = raw;
+  try { dec = decodeURIComponent(raw); } catch (e) {}
+  var to = old[dec] || old[raw];
+  if (to) location.replace(to + location.search + location.hash);
+})();
+</script>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <a class="mark" href="/">
+      <span>Vegan Cheese</span>
+    </a>
+  </header>
+</div>
+
+<main id="main">
+  <div class="wrap">
+    <section class="band" style="border-top: none;">
+      <p class="label">Error 404</p>
+      <h2>That page isn’t here</h2>
+      <div class="prose">
+        <p>
+          The page you were looking for doesn’t exist — it may have moved when
+          the site was rebuilt.
+        </p>
+        <p>
+          <a href="/">Go to the home page</a>, or write to
+          <a href="mailto:contact@vegancheese.info">contact@vegancheese.info</a>.
+        </p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<div class="wrap">
+  <footer class="foot">
+    <p>© 2026 The Science and Practice of Vegan Cheese</p>
+    <nav aria-label="Legal">
+      <a href="/impressum.html">Impressum</a>
+      <a href="/datenschutz.html">Datenschutz</a>
+    </nav>
+  </footer>
+</div>
+</body>
+</html>
