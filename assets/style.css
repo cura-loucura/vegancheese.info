@@ -339,6 +339,15 @@ a:hover {
   margin-bottom: 0.4rem;
 }
 
+.prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.88em;
+  background: var(--paper-warm);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+  word-break: break-word;
+}
+
 .todo {
   background: var(--rind);
   border-left: 3px solid #b9924a;
